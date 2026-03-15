@@ -1,16 +1,24 @@
-Password Generator
+# Password Generator
 
-Простая утилита на Python для генерации паролей из букв и цифр. Генерирует нужное количество паролей заданной длины и сохраняет их в текстовый файл — по одному паролю на строку. Для случайности используется модуль secrets.
+Password Generator — a simple Python utility for generating passwords from letters and digits. It generates a specified number of passwords of a given length and saves them to a text file — one password per line. The module secrets is used for randomness.
 
-Запуск:
-
+## Usage
+```
 bash
 python3 password_gen.py -n 10 -l 16 -o passwords.txt
+```
+## Parameters
 
-Параметры:
+    -n, --number — number of passwords (default 10)
+    -l, --length — password length (default 16)
+    -o, --out — output file name (default passwords_YYYYMMDD_HHMMSS.txt)
 
-    -n, --number — количество паролей (по умолчанию 10)
-    -l, --length — длина пароля (по умолчанию 16)
-    -o, --out — имя выходного файла (по умолчанию passwords_YYYYMMDD_HHMMSS.txt)
+## Requirements
 
-Требования: Python 3.6+. Используйте менеджер паролей для хранения сгенерированных значений.
+    Python 3.6+
+
+Use a password manager to store generated passwords.
+
+## License
+
+MIT
